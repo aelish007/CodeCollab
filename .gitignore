@@ -21,3 +21,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Build directories
+dist/
+build/
+out/
