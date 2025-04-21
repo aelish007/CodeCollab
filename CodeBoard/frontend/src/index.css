@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Workbench&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
+@import url("tldraw/tldraw.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  --sb-track-color: #3d404a;
+  --sb-thumb-color: #3d404a;
+  --sb-size: 6px;
+}
+
+::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: var(--sb-size);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 5px;
+  height: var(--sb-size);
+  width: var(--sb-size);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 5px;
+  height: var(--sb-size);
+}
+
+.select-icon {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAABGdBTUEAALGPC/xhBQAAAQtJREFUOBG1lEEOgjAQRalbGj2OG9caOACn4ALGtfEuHACiazceR1PWOH/CNA3aMiTaBDpt/7zPdBKy7M/DCL9pGkvxxVp7KsvyJftL5rZt1865M+Ucq6pyyF3hNcI7Cuu+728QYn/JQA5yKaempxuZmQngOwEaYx55nu+1lQh8GIatMGi+01NwBcEmhxBqK4nAPZJ78K0KKFAJmR3oPp8+Iwgob0Oa6+TLoeCvRx+mTUYf/FVBGTPRwDkfLxnaSrRwcH0FWhNOmrkWYbE2XEicqgSa1J0LQ+aPCuQgZiLnwewbGuz5MGoAhcIkCQcjaTBjMgtXGURMVHC1wcQEy0J+Zlj8bKAnY1/UzDe2dbAVqfXn6wAAAABJRU5ErkJggg==");
+  background-size: 0.8rem;
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+}
+.tl-background {
+  background-color: #1e1e1e;
+}
+.tlui-debug-panel {
+  display: none;
+}
+.tlui-toolbar__tools {
+  margin-bottom: 55px;
+}
+
+@media (min-width: 1024px) {
+  .tlui-toolbar__tools {
+    margin-bottom: 0px;
+  }
+}
